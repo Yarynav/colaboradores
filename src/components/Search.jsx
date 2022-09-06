@@ -5,16 +5,16 @@ export const Search = ({ manejarBusqueda }) => {
   const [busqueda, setBusqueda] = useState('');
   return (
     <>
-      <div className="flex justify-center ">
+      <div className="flex justify-center items-center">
         <input
           type="search"
-          className="border-2 w-full p-2 mt-2 placeholder-gray-600 roun-md"
+          className="border-2 w-full p-2 mr-2 placeholder-gray-600 roun-md rounded-lg"
           onChange={(e) => {
             setBusqueda(e.target.value);
           }}
         />
         <button
-          className="bg-indigo-600 p-3 text-white uppercase font-bold hover:bg-indigo-700 cursor-pointer"
+          className="bg-indigo-600 p-3 text-white uppercase font-bold hover:bg-indigo-700 cursor-pointer rounded-lg"
           onClick={() => manejarBusqueda(busqueda)}
         >
           <svg
